@@ -116,7 +116,7 @@ class App extends React.Component {
                     rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}
                     subscribeToRoom={this.subscribeToRoom}
                     currentRoomId={this.state.currentRoomId} />
-                <MessageList
+                <MessageList  //message list
                     currentRoomId={this.state.currentRoomId}
                     messages={this.state.messages} />
                 <NewRoomForm onSubmit={this.createRoom.bind(this)} />
@@ -129,3 +129,5 @@ class App extends React.Component {
 }
 
 export default App
+
+____
