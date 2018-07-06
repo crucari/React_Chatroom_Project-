@@ -64,7 +64,7 @@ class App extends React.Component {
                 })
             })           
         })
-        .catch(err => console.log('error connecting: ', err))
+        .catch(err => console.log('error connecting: ', err))  //error connecting 
     }
 
     sendMessage(text) {
@@ -122,7 +122,7 @@ class App extends React.Component {
                 <NewRoomForm onSubmit={this.createRoom.bind(this)} />
                 <SendMessageForm
                     sendMessage={this.sendMessage}
-                    disabled={!this.state.currentRoomId} />
+                    disabled={!this.state.currentRoomId} />  
             </div>
         );
     }
