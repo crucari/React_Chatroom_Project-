@@ -39,7 +39,7 @@ class App extends React.Component {
             joinedRooms: [],
             messages: []
         }
-        this.subscribeToRoom = this.subscribeToRoom.bind(this)
+        this.subscribeToRoom = this.subscribeToRoom.bind(this)  //subscribe to room
         this.sendMessage = this.sendMessage.bind(this)
         this.subscribeToRoom = this.subscribeToRoom.bind(this)
     }
